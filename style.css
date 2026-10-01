@@ -38,3 +38,15 @@ button{font:inherit;cursor:pointer;border:0;border-radius:10px}
 .rm.sure{color:var(--bad);font-weight:700}
 .empty{text-align:center;color:var(--mute);padding:28px 10px;border:2px dashed var(--line);border-radius:14px}
 .note{font-size:.8rem;color:var(--mute);text-align:center;margin-top:20px}
+.feedback {
+  display: block;
+  text-align: center;
+  margin: 24px auto 0;
+  padding: 12px 20px;
+  max-width: 220px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
