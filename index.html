@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>طلباتي</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>طلباتي</h1>
+<p class="sub">كل طلبات الزبناء فمكان واحد.</p>
+
+<div class="stats">
+  <div class="stat"><b id="sUnpaid">0</b><span>باقي ما تخلصو (درهم)</span></div>
+  <div class="stat b"><b id="sCount">0</b><span>طلبات جارية</span></div>
+</div>
+
+<form id="f" autocomplete="off">
+  <label>اسم الزبون<input id="name" required maxlength="60" placeholder="مثلاً: سلمى"></label>
+  <label>المنتوج<input id="prod" required maxlength="80" placeholder="مثلاً: قفطان أزرق"></label>
+  <div class="row">
+    <label>الثمن (درهم)<input id="price" type="number" inputmode="decimal" min="0" required placeholder="250"></label>
+    <label>رقم الواتساب<input id="phone" type="tel" inputmode="tel" placeholder="0612345678"></label>
+  </div>
+  <button class="add" type="submit">زيد الطلب</button>
+</form>
+
+<div class="chips" id="chips"></div>
+<div id="list"></div>
+<p class="note">البيانات كتبقى فهاتفك فقط.</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
